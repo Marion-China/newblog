@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>用C++定义变量并做一个简易的计算器</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+</head>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<html>
+
+<body background="../微软专辑2.BMP" style=" background-repeat:no-repeat"></body>
+<a href="../index.html" class="btn btn-success  active" role="button" aria-pressed="true">返回</a>
+<h1 id="-c-">用C++定义变量并做一个简易的计算器</h1>
+<p>C++怎么加减乘除呢？</p>
+<p>很简单：</p>
+<p>在输出时加上加减乘除。</p>
+<p>注意：
+如：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center">加法</th>
+<th>减法</th>
+<th style="text-align:center">乘法</th>
+<th style="text-align:center">除法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">课本上的</td>
+<td style="text-align:center">+</td>
+<td>-</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">÷</td>
+</tr>
+<tr>
+<td style="text-align:left">计算机</td>
+<td style="text-align:center">+</td>
+<td>-</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">/</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-cout&lt;&lt;1+2;">cout&lt;&lt;<span class="hljs-number">1</span><span class="hljs-number">-2</span>;
+</code></pre>
+<pre><code class="lang-cout&lt;&lt;1*2;">cout&lt;&lt;<span class="hljs-number">1</span>/<span class="hljs-number">2</span>;
+</code></pre>
+<p>这样，就可以完成了</p>
+<p>例题：计算7+2</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-number">7</span>+<span class="hljs-number">2</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>那么，做计算器的话，如何在终端台使用呢</p>
+<p>——那就用定义了</p>
+<p><code>int</code>
+int +一个英文为定义一个英文；如<code>int a</code> 就是定义一个叫<code>a</code>的东西</p>
+<p><code>cin &gt;&gt;</code>+已定义的的英文为读取用户输入的东西存储到已定义的英文。如<code>cin&gt;&gt;a</code>为读取用户输入的东西并存储到a。</p>
+<p>输出：<code>cout&lt;&lt;+</code>定义英文，不用加&quot; &quot;。</p>
+<p>例题2：让用户输入的东西存储到a。并输出</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> a;
+    <span class="hljs-built_in">cin</span>&gt;&gt;a;
+    <span class="hljs-built_in">cout</span> &lt;&lt; a;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>小提示：完事要按回车哦。</p>
+<p>在输入时，如果想达到一行输入n（n&gt;2）的数值可以这样操作：</p>
+<p>使用<code>cin&gt;&gt;a&gt;&gt;b</code>的方式</p>
+<p>输入时两个数值之间可以空格，也可以换行</p>
+<p>例题3:可输入的加法计算器</p>
+<pre><code class="lang-C++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">int</span> a,b;
+    <span class="hljs-built_in">cin</span>&gt;&gt;a&gt;&gt;b;
+    <span class="hljs-built_in">cout</span> &lt;&lt; a+b;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>如图所示
+<img src=".\4+3.png" alt="4+3"></p>
+</html>

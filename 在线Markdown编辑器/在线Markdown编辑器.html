@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>在线Markdown编辑器</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+</head>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<html>
+    <a href="../index.html" class="btn btn-info  active" role="button" aria-pressed="true">返回</a>
+    <body background="../微软专辑124.png" style=" background-repeat:no-repeat"></body>
+
+<head>
+    <title>在线Markdown编辑器</title>
+    <script type="text/javascript" src="showdown.min.js"></script>
+</head>
+<style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+     font-size: 16px;
+      line-height: 1.42857143;
+      color: #333;
+      background-color: #fff;
+    }
+    ul li {
+        line-height: 24px;
+    }
+    blockquote {
+        border-left:#eee solid 5px;
+        padding-left:20px;
+    }
+    code {
+        color:#D34B62;
+        background: #F9F2F4;
+    }
+</style>
+<body>
+    
+<div>
+    <textarea id="content" style="height:400px;width:600px;" onkeyup="compile()"></textarea>
+    <div id="result"></div>
+
+</div>
+<script type="text/javascript">
+function compile(){
+    var text = document.getElementById("content").value;
+    var converter = new showdown.Converter();
+    var html = converter.makeHtml(text);
+    document.getElementById("result").innerHTML = html;
+}
+</script>
+</body>
+</html>

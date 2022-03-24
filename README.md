@@ -1,2 +1,2 @@
-# newblog
-newblog
+# blog
+未经允许严禁复制网站代码
