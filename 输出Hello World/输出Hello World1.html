@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>输出Hello World</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+</head>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<html>
+<body background="../微软专辑124.png" style=" background-repeat:no-repeat"></body>
+<a href="../index.html" class="btn btn-primary  active" role="button" aria-pressed="true">返回</a>
+<h1 id="-hello-world">输出Hello World</h1>
+<p>先看一眼效果：</p>
+<p><img src=".\终端.png" alt="终端"></p>
+<p>怎么样？</p>
+<h2 id="-">一.书写基本框架</h2>
+<p>首先头文件：</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+</code></pre>
+<p>C++库（方便编辑）： </p>
+<pre><code class="lang-C++"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+</code></pre>
+<p>基本框架：</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+}
+</code></pre>
+<p>结束：</p>
+<p><code>return 0;</code>
+然后就基本完成了：</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>这样的话什么都不会输出</p>
+<h2 id="-">二.输出内容</h2>
+<pre><code class="lang-c++">cout&lt;&lt;<span class="hljs-string">"你要说的话"</span><span class="hljs-comment">;</span>
+</code></pre>
+<p>然后：</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"你要说的话"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>然后就可以输出了：</p>
+<p>图片</p>
+<p>你学会了么？</p>
+<p>例题1：输出：Hello World</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Hello World"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>例题2：输出：a</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"a"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="-">三.换行的方式</h2>
+<p>假设你想书写一段话：你可能尝试这么写：</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Hello World"</span>;
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"我要换行！"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>但是可能运行后：</p>
+<p><img src=".\未换行输出.png" alt="未换行输出"></p>
+<h3 id="-endl-">法一：加&lt;&lt;endl;</h3>
+<p>在文本双引号后输入<code>&lt;&lt;endl;</code>
+如下：</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Hello World"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"我要换行！"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>这样：<img src=".\换行输出.png" alt="换行输出"></p>
+<h3 id="-2-n">法2:加\n</h3>
+<p>在<strong>文本内输入</strong><code>\n</code></p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Hello World\n"</span>;
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"我要换行！"</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p>效果相同，但是你可以这样：</p>
+<p><img src=".\You can also.png" alt="You can also"></p>
+<p>例题3：输出图形</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">" ##     ##    ##"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"  ############"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"    ########"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"     ######"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"       # "</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+}
+</code></pre>
+<p>例题四：输出长方形</p>
+<pre><code class="lang-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"####################"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"#                  #"</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"#                  #"</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"#                  #"</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"#                  #"</span>;
+<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"####################"</span>;
+}
+</code></pre>
+</html>
