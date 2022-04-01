@@ -1,0 +1,146 @@
+如何输出呢？
+
+先看一眼效果：
+
+图片
+
+怎么样？
+
+首先头文件：
+
+#include <iostream>
+C++库（方便编辑）：
+
+using namespace std;
+框框：
+
+int main()
+{
+}
+结束：
+
+return 0;
+然后就基本完成了：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+}
+这样的话什么都不会输出
+
+
+
+要加上：
+
+cout<<"你要说的话";
+然后：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"你要说的话";
+}
+然后就可以输出了：
+
+图片
+
+你学会了么？
+
+例题：输出：hello
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"hello";
+}
+例题2：输出：a
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"hello";
+}
+
+那么如何换行呢？
+
+再加一行如下
+
+：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"hello";
+cout<<"a";
+}
+运行后：
+
+图片
+
+那就得加入
+
+<<endl;
+如下：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"hello"<<endl;
+cout<<"a";
+}
+这样：
+
+图片
+
+例题3：输出图片
+
+答案：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<" ##      #    ##"<<endl;
+cout<<"  ############"<<endl;
+cout<<"    ########"<<endl;
+cout<<"     ######"<<endl;
+cout<<"       # "<<endl;
+}
+例题四：输出正方形
+
+答案：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+cout<<"##################"<<endl;
+cout<<"#                #";
+cout<<"#                #";
+cout<<"#                #";
+cout<<"#                #";
+cout<<"##################";
+}
+例题五：输出长方形
+
+答案：
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+cout<<"################################"<<endl;
+cout<<"#                              #";
+cout<<"#                              #";
+cout<<"#                              #";
+cout<<"#                              #";
+cout<<"################################"<<endl;
+}
